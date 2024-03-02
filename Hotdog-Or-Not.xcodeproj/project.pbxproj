@@ -13,7 +13,7 @@
 		4C8DF6FD2B9190BD00E509E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8DF6FB2B9190BD00E509E4 /* Main.storyboard */; };
 		4C8DF6FF2B9190BF00E509E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8DF6FE2B9190BF00E509E4 /* Assets.xcassets */; };
 		4C8DF7022B9190BF00E509E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8DF7002B9190BF00E509E4 /* LaunchScreen.storyboard */; };
-		4C8DF7102B9194B400E509E4 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DF70F2B9194B400E509E4 /* Inceptionv3.mlmodel */; };
+		4C8DF7122B91C6FF00E509E4 /* Inceptionv3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DF7112B91C6FF00E509E4 /* Inceptionv3.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		4C8DF6FE2B9190BF00E509E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8DF7012B9190BF00E509E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8DF7032B9190BF00E509E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C8DF70F2B9194B400E509E4 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		4C8DF7112B91C6FF00E509E4 /* Inceptionv3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Inceptionv3.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				4C8DF6FE2B9190BF00E509E4 /* Assets.xcassets */,
 				4C8DF7002B9190BF00E509E4 /* LaunchScreen.storyboard */,
 				4C8DF7032B9190BF00E509E4 /* Info.plist */,
-				4C8DF70F2B9194B400E509E4 /* Inceptionv3.mlmodel */,
+				4C8DF7112B91C6FF00E509E4 /* Inceptionv3.mlpackage */,
 			);
 			path = "Hotdog-Or-Not";
 			sourceTree = "<group>";
@@ -141,8 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8DF7122B91C6FF00E509E4 /* Inceptionv3.mlpackage in Sources */,
 				4C8DF6FA2B9190BD00E509E4 /* ViewController.swift in Sources */,
-				4C8DF7102B9194B400E509E4 /* Inceptionv3.mlmodel in Sources */,
 				4C8DF6F62B9190BD00E509E4 /* AppDelegate.swift in Sources */,
 				4C8DF6F82B9190BD00E509E4 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,8 +294,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25P4S87VXL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Hotdog-Or-Not/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +305,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +313,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qodewiz.Hotdog-Or-Not";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,8 +325,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25P4S87VXL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Hotdog-Or-Not/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,6 +336,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +344,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qodewiz.Hotdog-Or-Not";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
