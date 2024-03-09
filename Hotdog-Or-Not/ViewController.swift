@@ -51,7 +51,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let results = request.results as? [VNClassificationObservation] else {
                 fatalError("Model failed to process image")
             }
-            print(results)
+            
+            // used optional chaining to ensure we have a first result value
+            if let firstResult = results.first {
+                // checking if identifier contains the word "hotdog"
+                if firstResult.identifier.contains("hotdog") {
+                    self.navigationItem.title = "Hotdog!"
+                } else {
+                    self.navigationItem.title = "Not Hotdog!"
+                }
+            }
         }
         
         // data is defined in a handler
