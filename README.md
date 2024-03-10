@@ -1,7 +1,7 @@
 ## Practice ML Project - Hotdog or not
 
-What does the app do?
-Hotdog-Or-Not is a simple iOS app that uses machine learning to classify images as either a "hotdog" or "not hotdog". It uses the CoreML framework with the Inceptionv3 model (pre trained model by appe) to process images and Vision to handle image classification tasks.
+### What does the app do?
+Hotdog-Or-Not is a simple iOS app that uses machine learning to classify images as either a "hotdog" or "not hotdog". It uses the CoreML framework with the Inceptionv3 model (pre trained model by apple) to process images and Vision to handle image classification tasks.
 
 ### Key features:
 - Capture images in real-time using the device's camera.
